@@ -7,14 +7,37 @@
 @import "tools.mixins";
 @import "tools.units";
 
-// # BASE
-//   Ground-zero styles, resets & unclassed HTML elements
+// # BASE/GENERIC
 @import "base.normalize";
 @import "base.reset";
-@import "base.body";
+
+// # VENDOR
+@import "vendor.jquery.fullpage";
+
+// # ELEMENTS
+//   Unclassed elements
+@import "elements.page";
+@import "elements.headings";
+@import "elements.links";
 
 // # OBJECTS
 //   Cosmetic-free design patterns
 
+// # UTILITIES
+//   Single class helpers for quick styling
+@import "utilities.spacing";
+@import "utilities.text";
+@import "utilities.headings";
+
 // # COMPONENTS
 //   Chunks of ui
+@import "components.canvas";
+@import "components.icon";
+@import "components.arrow";
+@import "components.video";
+@import "components.story";
+@import "components.thanks";
+@import "components.divider";
+@import "components.form";
+@import "components.stats";
+

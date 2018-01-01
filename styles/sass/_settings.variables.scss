@@ -1,13 +1,29 @@
-/* ------------------------------------------
-   settings.VARIABLES
------------------------------------------- */
-
 // Colors
-$color-primary: #FF2942;
-$color-secondary: #0E64FF;
+$color-primary: #DF1F00;
+$color-secondary: #FF4136;
+$color-tertiary: #2ECC40;
+$color-light: #FBF5F5;
+$color-dark: #111111;
 
-$dark: #1C1D1E;
-$light: #FAFAFA;
+// Typography
+$ff-body: 'Montserrat', sans-serif;
+$ff-headings: $ff-body;
+
+$fw-regular: 400;
+$fw-bold: 700;
+
+$headings-font-family: $ff-headings;
+$headings-font-weight: 700;
+$headings-line-height: 1.8;
+$headings-color: $color-primary;
+$headings-margin-bottom: .5em;
+
+$h1-font-size: 94px;
+$h2-font-size: 68px;
+$h3-font-size: 36px;
+$h4-font-size: 24px;
+$h5-font-size: 18px;
+$h6-font-size: 15px;
 
 // Layout
 $gutter: 20px;

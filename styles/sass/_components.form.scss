@@ -1,0 +1,36 @@
+.c-form {
+  background-color: $color-primary;
+  padding: $gutter;
+  margin-bottom: -90px;
+
+  p {
+    font-size: rem-calc(16);
+  }
+
+  #mc_embed_signup_scroll {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    background-color: $color-light;
+    color: $color-dark;
+    border: none;
+    width: 100%;
+    outline: none;
+    padding: 15px 20px;
+    font-size: rem-calc(20);
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+    color: $color-primary;
+    background-color: $color-dark;
+  }
+
+}

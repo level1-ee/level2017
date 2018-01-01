@@ -1,0 +1,51 @@
+$spacer: $gutter !default;
+$spacers: (
+0: 0,
+1: ($spacer * .25),
+2: ($spacer * .5),
+3: $spacer,
+4: ($spacer * 1.5),
+5: ($spacer * 3),
+6: ($spacer * 6),
+7: ($spacer * 12)
+) !default;
+
+@each $prop, $abbrev in (margin:u-m, padding: u-p) {
+  @each $size, $length in $spacers {
+
+    .#{$abbrev}-#{$size}  { #{$prop}:        $length !important; }
+    .#{$abbrev}t-#{$size} { #{$prop}-top:    $length !important; }
+    .#{$abbrev}r-#{$size} { #{$prop}-right:  $length !important; }
+    .#{$abbrev}b-#{$size} { #{$prop}-bottom: $length !important; }
+    .#{$abbrev}l-#{$size} { #{$prop}-left:   $length !important; }
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length !important;
+      #{$prop}-left:  $length !important;
+    }
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top:    ( $length / 2 ) !important;
+      #{$prop}-bottom: ( $length / 2 ) !important;
+
+      @include mq(1200) {
+        #{$prop}-top:    $length !important;
+        #{$prop}-bottom: $length !important;
+      }
+
+    }
+  }
+}
+
+// Some special margin utils
+.u-m-auto  { margin:        auto !important; }
+.u-mt-auto { margin-top:    auto !important; }
+.u-mr-auto { margin-right:  auto !important; }
+.u-mb-auto { margin-bottom: auto !important; }
+.u-ml-auto { margin-left:   auto !important; }
+.u-mx-auto {
+  margin-right: auto !important;
+  margin-left:  auto !important;
+}
+.u-my-auto {
+  margin-top:    auto !important;
+  margin-bottom: auto !important;
+}

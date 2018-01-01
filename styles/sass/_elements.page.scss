@@ -1,0 +1,15 @@
+body {
+  font-family: $ff-body;
+  font-weight: $fw-regular;
+  font-size: rem-calc(16);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: $color-light;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-secondary;
+}
